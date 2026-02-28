@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getAdminStats, getAdminLogs } from "../Services/api";
+import { getAdminStats, getAdminLogs } from "../services/api";
 import { logout } from "../utils/auth_utils";
 import StatsCard from "../components/StatsCard";
 import "./AdminDashboard.css";

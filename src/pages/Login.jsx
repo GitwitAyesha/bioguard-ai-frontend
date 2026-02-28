@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { login, sendOtp, verifyOtp } from "../Services/api";
+import { login, sendOtp, verifyOtp } from "../services/api";
 import { saveAuth } from "../utils/auth_utils";
 import CameraCapture from "../components/CameraCapture";
 import "./AuthPage.css";

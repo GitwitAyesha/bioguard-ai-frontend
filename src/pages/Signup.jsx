@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signup } from "../Services/api";
+import { signup } from "../services/api";
 import CameraCapture from "../components/CameraCapture";
 import "./AuthPage.css";
 
