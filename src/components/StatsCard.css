@@ -1,0 +1,50 @@
+.stats-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+
+.stats-card--accent::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+.stats-card--green::before { background: linear-gradient(90deg, transparent, var(--accent2), transparent); }
+.stats-card--warn::before { background: linear-gradient(90deg, transparent, var(--warn), transparent); }
+.stats-card--danger::before { background: linear-gradient(90deg, transparent, var(--danger), transparent); }
+
+.stats-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+}
+
+.stats-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.stats-value {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
